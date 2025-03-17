@@ -42,6 +42,7 @@ cd bicture-app
 3️⃣ Konfigurasi Firebase
 - Unduh file google-services.json dari Firebase Console.
 - Letakkan file tersebut di dalam folder app/.
+
 4️⃣ Jalankan Aplikasi
 - Pilih device/emulator di Android Studio.
 - Klik Run (▶) untuk menjalankan aplikasi.
