@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Imaginate" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+    </style>
+
+    <style name="Theme.YourApp.Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!-- Mode Terang - diterapkan saat sistem dalam mode terang -->
+    <style name="Theme.Imaginate.Light" parent="Base.Theme.Imaginate">
+        <item name="android:statusBarColor">@color/transparan</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Mode Gelap - diterapkan saat sistem dalam mode gelap -->
+    <style name="Theme.Imaginate.Dark" parent="Base.Theme.Imaginate">
+        <item name="android:statusBarColor">@color/transparan</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <!-- Tema utama akan menyesuaikan berdasarkan mode sistem -->
+    <style name="Theme.Imaginate" parent="Base.Theme.Imaginate">
+        <item name="android:statusBarColor">@color/transparan</item>
+        <!-- Tidak set windowLightStatusBar di sini, akan diatur programmatically -->
+    </style>
+</resources>

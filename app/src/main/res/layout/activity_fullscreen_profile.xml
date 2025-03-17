@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Main Content -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:background="@color/black">
+
+        <!-- Background overlay -->
+        <FrameLayout
+            android:id="@+id/blur_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Background image that will be blurred -->
+            <ImageView
+                android:id="@+id/background_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:alpha="0.6" />
+
+            <!-- Dark overlay -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99000000" />
+        </FrameLayout>
+
+        <!-- Fullscreen Image -->
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/fullscreen_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:nestedScrollingEnabled="false"
+            android:fadeScrollbars="false"
+            android:layout_marginTop="55dp"
+            android:padding="10dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <!-- Header Layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/lingkaran"
+                android:backgroundTint="@color/blacksmooth2"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrowleft"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/Download"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/lingkaran"
+                android:backgroundTint="@color/blacksmooth2"
+                android:scaleType="centerInside"
+                android:src="@drawable/progress_download_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/linearUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/close_button"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by "
+                    android:textColor="#E7E6E1FF"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/gentium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/usernameUploader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="Username"
+                    android:textColor="#E7E6E1FF"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/gentium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

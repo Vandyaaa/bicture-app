@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:elevation="0.4dp"
+    android:layout_marginBottom="5dp"
+    android:paddingHorizontal="6dp"
+    android:paddingTop="15dp"
+    >
+
+    <!-- Nama pengguna pengirim komentar -->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/photoProfileComment"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="10dp"
+
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_bct_v1"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent="0.8">
+
+        <TextView
+            android:id="@+id/commentUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gentium"
+            android:paddingLeft="5dp"
+            android:text="Username"
+            android:textColor="@color/whitesmooth"
+            android:textFontWeight="1000"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Isi komentar -->
+
+        <TextView
+            android:id="@+id/commentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="600"
+            android:fontFamily="@font/urbanist"
+            android:paddingVertical="4dp"
+            android:paddingLeft="5dp"
+            android:text="Komentar"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/commentUsername"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <TextView
+            android:id="@+id/balas"
+            android:text="balas"
+            android:textSize="10dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/blacksmooth4"
+            android:gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/containerReplies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:alpha="0.6"
+                android:background="@color/blacksmooth3dot5"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/replies"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_reply"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/expandAndcCollapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blacksmooth4"
+
+            android:text="⸻ expand"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

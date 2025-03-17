@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Register">
+
+
+    <TextView
+        android:id="@+id/tvWelcome2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:fontFamily="@font/gentium"
+        android:paddingHorizontal="35dp"
+        android:text="Register Now."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lingkaran"
+        android:backgroundTint="@color/blacksmooth2"
+        android:fontFamily="@font/urbanist"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:text="Create your account to get started!"
+        android:textColor="@color/whitesmooth"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:alpha="0.9"
+        android:background="@color/transparan"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/countUsernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanist"
+            android:text="0/20"
+            android:textColor="@color/whitesmooth" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_24"
+                app:tint="@color/whitesmooth" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/blacksmooth2"
+
+                android:fontFamily="@font/gentium"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whitesmooth"
+                app:layout_constraintBottom_toTopOf="@+id/etPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/at_24"
+                app:tint="@color/whitesmooth" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/blacksmooth2"
+
+                android:fontFamily="@font/gentium"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whitesmooth"
+                app:layout_constraintBottom_toTopOf="@+id/etPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/key_24"
+                app:tint="@color/whitesmooth" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blacksmooth2"
+                android:fontFamily="@font/gentium"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whitesmooth"
+                app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/seePassword"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:padding="26dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/eye_24"
+                app:tint="@color/whitesmooth" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/borderradiussmall2"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/urbanist"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#0003A9F4"
+            android:fontFamily="@font/gentium"
+            android:textAlignment="center"
+            android:text="New here? Create an account!"
+            android:textColor="#9D9D9D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

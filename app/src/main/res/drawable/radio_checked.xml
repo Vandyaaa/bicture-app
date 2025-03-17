@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lingkaran luar -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#2196F3"/> <!-- Warna biru -->
+            <size android:width="14dp" android:height="14dp"/>
+            <stroke android:width="2dp" android:color="#1565C0"/>
+        </shape>
+    </item>
+    <!-- Lingkaran dalam -->
+    <item android:top="6dp" android:bottom="6dp" android:left="6dp" android:right="6dp">
+        <shape android:shape="oval">
+            <solid android:color="#ffffff"/> <!-- Warna putih di dalam -->
+        </shape>
+    </item>
+</layer-list>

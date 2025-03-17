@@ -1,0 +1,5 @@
+<!-- res/drawable/bg_edit_text.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffffff"/>
+    <corners android:radius="12dp"/>
+</shape>

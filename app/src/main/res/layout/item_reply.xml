@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingVertical="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:scaleType="centerCrop"
+            android:id="@+id/view7"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:alpha="0.6"
+            android:background="@color/blacksmooth3dot5"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/replyProfileImage"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="10dp"
+
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_bct_v1"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/replyUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gentium"
+                android:paddingLeft="5dp"
+                android:text="Username"
+                android:textColor="@color/whitesmooth"
+                android:textFontWeight="1000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:baselineAligned="false"
+                android:padding="4dp"
+                android:rotation="180"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arrowleft"
+                app:tint="@color/whitesmooth" />
+
+            <TextView
+                android:id="@+id/tagUsernameReplyed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gentium"
+                android:text="Username"
+                android:textColor="@color/whitesmooth"
+                android:textFontWeight="1000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+
+
+        </LinearLayout>
+
+
+
+
+        <!-- Isi komentar -->
+
+        <TextView
+            android:id="@+id/replyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="600"
+            android:fontFamily="@font/urbanist"
+            android:paddingVertical="4dp"
+            android:paddingLeft="5dp"
+            android:text="Komentar"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/commentUsername"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <TextView
+            android:id="@+id/balas2"
+            android:text="balas"
+            android:textSize="10dp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/blacksmooth4"
+            android:layout_width="50dp"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

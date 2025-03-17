@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/collectionfrag"
+    android:background="@color/black"
+    tools:context=".HomeFragment">
+
+    <com.example.imaginate.CustomSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:id="@+id/swipeRefreshLayout"
+        >
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:paddingHorizontal="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_scrollEffect="compress"
+            tools:listitem="@layout/item_upload" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFollowed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_scrollEffect="compress"
+            tools:listitem="@layout/item_upload" />
+
+
+
+
+    </com.example.imaginate.CustomSwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/noFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/swipeRefreshLayout"
+        app:layout_constraintStart_toStartOf="@+id/swipeRefreshLayout"
+        app:layout_constraintTop_toTopOf="@+id/swipeRefreshLayout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gentium"
+            android:text="Start following and make your feed come alive!"
+            android:textAlignment="center"
+            android:textColor="@color/blacksmooth4"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/loading_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

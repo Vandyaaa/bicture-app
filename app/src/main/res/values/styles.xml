@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomActiveIndicator" parent="Widget.Material3.NavigationRailView.ActiveIndicator">
+        <item name="indicatorColor">#FFD5D5</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="aktifuttonefk">
+        <item name="android:color">@android:color/transparent</item>
+        <item name="android:width">0dp</item>
+        <item name="android:height">0dp</item>
+    </style>
+
+    <style name="Theme.imaginate.Splash" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Warna latar belakang splash screen -->
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="UCropActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="background">@drawable/bgbicture</item>
+    </style>
+
+
+    <style name="BottomSheetDialogTheme2" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="CustomUCropTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+
+    </style>
+
+    <style name="CustomPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:color">@color/black</item>
+        <item name="android:fontFamily">@font/gentium</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">22dp</item>
+    </style>
+
+    <style name="Theme.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+</resources>

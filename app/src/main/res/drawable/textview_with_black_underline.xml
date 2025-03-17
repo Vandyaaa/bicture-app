@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="bottom"
+        android:bottom="5dp">  <!-- Tambahkan margin bottom disini -->
+        <shape android:shape="rectangle">
+            <size android:height="1dp" />
+            <solid android:color="@color/blacksmooth4" />
+        </shape>
+    </item>
+</layer-list>

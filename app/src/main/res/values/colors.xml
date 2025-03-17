@@ -1,0 +1,23 @@
+<resources>
+    <color name="red">#EFE93A3A</color>
+    <color name="red_semiTransparant">#D81BAEAE</color>
+    <color name="blue_semiTransparant">#D8643E0E</color>
+    <color name="blue">#076397</color>
+    <!--    <color name="blue">#3A10B4</color>-->
+    <color name="cream">#001251</color>
+    <color name="brighty">#00115B</color>
+    <color name="white">#0D0A01</color>
+    <color name="whitesmooth">#3D3D3D</color>
+    <color name="blackSmooth">#F1F1F1</color>
+    <color name="darkSmooth">#E5E1DB</color>
+    <color name="blacksmooth1dot5">#E0DFDA</color>
+    <color name="blacksmooth2">#D9D9D4</color>
+
+    <color name="blacksmooth2dot5">#D0D0C9</color>
+    <color name="blacksmooth3">#C7C7C1</color>
+    <color name="blacksmooth3dot5">#C0C0B9</color>
+    <color name="blacksmooth4">#ABABA3</color>
+    <color name="black">#e7e6e1</color>
+    <color name="transparan">#00E3E1E0</color>
+    <color name="yellow">#030A38</color>
+</resources>

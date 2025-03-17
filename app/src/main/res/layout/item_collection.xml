@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/cardview_compat_inset_shadow"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="20dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profiledata"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.None"
+        app:srcCompat="@drawable/error_image" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/uploadDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textview_with_black_underline"
+            android:backgroundTint="@color/blacksmooth3"
+            android:fontFamily="@font/urbanist"
+            android:gravity="center"
+            android:paddingVertical="7dp"
+            android:text="Tanggal Upload"
+            android:textColor="@color/whitesmooth"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/lingkaran_border_isi_transparan"
+            android:gravity="center"
+            android:padding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageButton
+                android:id="@+id/listLikes"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/transparan"
+                app:tint="@color/blacksmooth3dot5"
+                android:contentDescription="Like"
+                android:padding="13dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/like_normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lingkaran_border_isi_transparan"
+            android:gravity="center"
+            android:padding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageButton
+                android:id="@+id/btnComment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/transparan"
+                android:padding="13dp"
+                app:tint="@color/blacksmooth3dot5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/beacon_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.5" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleandbookmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:fontFamily="@font/gentium"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lingkaran"
+            android:backgroundTint="@color/blacksmooth2"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textTitle"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/gentium"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="454dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gentium"
+                android:text="Likes"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profiledata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:paddingVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerprofile"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/lingkaran_border_putih_tipis"
+                android:backgroundTint="@color/blacksmooth3"
+                android:padding="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/photoProfile"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:contentDescription="Profile Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ikonprofildfl"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/usernameUploader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textview_with_black_underline"
+                android:fontFamily="@font/gentium"
+                android:paddingVertical="2dp"
+                android:paddingTop="5dp"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnOthers"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@color/transparan"
+            android:scaleType="centerCrop"
+            android:padding="8dp"
+            android:src="@drawable/menu_dots_vertical_24"
+            app:tint="@color/whitesmooth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanist"
+        android:paddingStart="12dp"
+        android:paddingRight="10dp"
+        android:maxLength="200"
+        android:ellipsize="end"
+        android:text="loaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textColor="@color/whitesmooth"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleandbookmark" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blacksmooth2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:alpha="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

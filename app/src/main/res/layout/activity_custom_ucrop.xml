@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:id="@id/ucrop_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/custom_ucrop_controls" />
+
+    <!-- Custom Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/custom_ucrop_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/custom_btn_rotate"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/plus_24"
+            app:tint="@color/white"
+            android:contentDescription="Rotate" />
+
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/custom_btn_crop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/add_image_24"
+            app:tint="@color/white"
+            android:contentDescription="Crop" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingVertical="16dp"
+    android:backgroundTint="@color/transparan"
+    android:background="@drawable/bg_input_border">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/plus_24"
+        android:padding="8dp"
+        app:tint="@color/whitesmooth"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/collageName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:maxLength="15"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/gentium"
+        android:text="sjsgy"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:elevation="2dp"
+        android:textSize="25sp"/>
+
+
+
+</LinearLayout>

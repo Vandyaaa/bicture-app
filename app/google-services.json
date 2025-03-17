@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1041867000491",
+    "firebase_url": "https://imageinate-a3d4b-default-rtdb.firebaseio.com",
+    "project_id": "imageinate-a3d4b",
+    "storage_bucket": "imageinate-a3d4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041867000491:android:fcc8c009684786685645ee",
+        "android_client_info": {
+          "package_name": "com.example.bictures"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATp9uQOhQui9rrpfJwe7WuijKGsT3e5z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041867000491:android:b317e75dd88c5d1a5645ee",
+        "android_client_info": {
+          "package_name": "com.example.imaginate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATp9uQOhQui9rrpfJwe7WuijKGsT3e5z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

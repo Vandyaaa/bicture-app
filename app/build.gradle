@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.imaginate'
+    compileSdk 34
+
+    signingConfigs {
+        release {
+            storeFile file("app/my-release-key.jks")
+            storePassword "android"
+            keyAlias "my-key-alias"
+            keyPassword "android"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.imaginate"
+        minSdk 24
+        targetSdk 33
+        versionCode 11
+        versionName "2.5"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11   // Gunakan Java 11
+        targetCompatibility JavaVersion.VERSION_11  // Gunakan Java 11
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    // Konfigurasi toolchain untuk Java 11
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.6.0')
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'com.google.firebase:firebase-database:21.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation libs.firebase.firestore
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation libs.navigation.runtime
+    implementation libs.cardview
+    implementation 'com.github.yalantis:ucrop:2.2.8'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.8'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'com.airbnb.android:lottie:6.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation libs.recyclerview
+    implementation libs.firebase.database
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+    implementation 'com.google.android.material:material:1.11.0-beta01'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.google.android.material:material:1.10.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/deleteCollage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/borderradiussmall3"
+        android:backgroundTint="@color/blacksmooth2"
+        android:paddingTop="50dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/trash_24"
+            android:background="@drawable/lingkaran"
+            app:tint="@color/white"
+            android:backgroundTint="@color/blacksmooth3"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/gentium"
+            android:padding="20dp"
+            android:text="Delete Album?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="1000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanist"
+            android:text="Are you sure you want to delete this collection? This action cannot be undone."
+            android:textAlignment="center"
+            android:textColor="@color/whitesmooth" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/blacksmooth2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_height="50dp"
+                android:background="@drawable/borderradiussmall"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/blacksmooth3"
+                android:fontFamily="@font/gentium"
+                android:textFontWeight="1000"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/borderradiussmall"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/gentium"
+                android:textFontWeight="1000"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

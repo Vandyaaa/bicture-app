@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bottomAppBar"
+            style="@style/CustomActiveIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/transparan"
+            android:orientation="vertical"
+            android:elevation="20dp"
+            android:gravity="center_horizontal"
+            app:navigationIconTint="#FF0B0B">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blacksmooth2"
+                android:layout_marginBottom="0dp"
+                />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="5dp"
+                app:itemBackground="@drawable/bottom_nav_item_background"
+                app:backgroundTint="@color/transparan"
+                app:itemActiveIndicatorStyle="@style/aktifuttonefk"
+                app:itemIconSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingHorizontal="20dp"
+                app:itemIconTint="@color/selector_color"
+                app:itemTextColor="@color/selector_color"
+                app:labelVisibilityMode="labeled"
+                app:itemPaddingTop="8dp"
+                app:itemPaddingBottom="8dp"
+                app:menu="@menu/bottom_menu">
+
+                <ImageView
+                    android:id="@+id/uploadButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/borderradiussmall2"
+                    android:backgroundTint="@color/blacksmooth2"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/plus_24"
+                    app:layout_anchor="@+id/linearLayout5"
+                    app:layout_anchorGravity="center"
+                    app:tint="@color/blacksmooth4" />
+
+                <!-- Add this view specifically for the upload button background -->
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
